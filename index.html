@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>special-chart-mmpi</title>
+    <link rel="stylesheet" href="./special-chart-mmpi.css" />
+  </head>
+  <body>
+    <div class="special-chart-mmpi">
+      <section class="legend_container">
+        <section class="legend">
+          <div>
+            <div>نمره استاندارد</div>
+            <div class="blueLegend"></div>
+          </div>
+          <div>
+            <div>نمره خام</div>
+            <div class="redLegend"></div>
+          </div>
+        </section>
+      </section>
+     
+      <div class="main-chart">
+        
+        <div>
+         
+          <svg id="svg">
+            <line class="redline" x1="0"  x2="50%" id="red_Line1" />
+            <line class="redline" x1="50%" x2="100%" id="red_Line2" />
+            <line class="blueline" x1="0" x2="50%" id="blue_Line1" />
+            <line class="blueline" x1="50%" x2="100%" id="blue_Line2" />
+          </svg>
+          <section class="dashed-vertical-line line1">
+            <div class="redball" id="red_ball1"></div>
+            <div class="blueball" id="blue_ball1"></div>
+          </section>
+          <section class="dashed-vertical-line line2">
+            <div class="redball" id="red_ball2"></div>
+            <div class="blueball" id="blue_ball2"></div>
+          </section>
+          <section class="dashed-vertical-line line3">
+            <div class="redball" id="red_ball3"></div>
+            <div class="blueball" id="blue_ball3"></div>
+          </section>
+
+          <div data-value="70"></div>
+          <div data-value="60"></div>
+          <div data-value="50"></div>
+          <div data-value="40"></div>
+          <div data-value="30"></div>
+          <div data-value="20"></div>
+          <div data-value="10"></div>
+          <div data-value="0"></div>
+        </div>
+      </div>
+      <div class="data">
+        <div>
+          <div>
+            <div>F</div>
+            <div id="F_value">60</div>
+            <div id="F_standard">10</div>
+          </div>
+          <div>
+            <div>L</div>
+            <div id="L_value">15</div>
+            <div id="L_standard">70</div>
+          </div>
+          <div>
+            <div>k</div>
+            <div id="K_value">5</div>
+            <div id="K_standard">50</div>
+          </div>
+        </div>
+        <div>
+          <div>نام شاخص</div>
+          <div>نمره خام</div>
+          <div>نمره استاندارد</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
